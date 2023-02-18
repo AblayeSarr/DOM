@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fc6210c2eb.js"></script>
+    <link rel="stylesheet" href="Style.css"/>
+    <title>DOM</title>
+</head>
+<body>
+    <header class="leuz">
+        <a href="#" class="logo"><span class="room">REALMADRID</span>-FC</a>
+    </header>
+ <section class="block">
+        <div class="part">
+            <div class="master">
+                <img class="img" src="Screenshot_2022-05-29-13-43-18-31_50ef9f5a0f3fc24b6f0ffc8843167fe4.jpg">
+                <p>Real Madrid FC The Best<br>Club In The World</p>
+                <h2 class="prix">10000M£</h2>
+                <button onclick="coeur1()"  id="btnh" class="btnh1"><i class="fa-solid fa-heart"></i></button>
+                <div class="btn1">
+                    <span class="plus">+</span>
+                    <span class="value">01</span>
+                    <span class="minus">-</span>
+                    <script>
+                        const plus = document.querySelector(".plus"),
+                        minus = document.querySelector(".minus"),
+                        value = document.querySelector(".value");
+
+                        let a = 1;
+
+                        plus.addEventListener("click", ()=>{
+                        a++;
+                        a = (a < 10) ? "0" + a : a;
+                        value.innerText = a;
+                        console.log(a);
+                        });
+
+                        minus.addEventListener("click", ()=>{
+                        if(a > 1){
+                         a--;
+                         a = (a < 10) ? "0" + a : a;
+                         value.innerText = a;  
+                        }
+                        });
+                    </script>
+                </div>
+                <br>
+                <div class="avec">
+                <button type="reset" class="delete">Supprimer</button>
+                </div>
+                <br>
+                <div>
+                    <h6 class="sarr">Total : <input type="text" class="total" value="0">M£</h6>
+                </div>
+            </div>
+        </div>    
+    <div class="part">
+        <div class="most">
+            <img class="image" src="FB_IMG_15866491709706539.jpg">
+            <p class="mum">The Best Player In The World</p>
+            <h2 class="prix">200M£</h2>
+            <button onclick="coeur2()" id="btnT" class="btnh2"><i class="fa-solid fa-heart"></i></button>
+            <div class="btn1">
+                <span class="add">+</span>
+                <span class="num">01</span>
+                <span class="moins">-</span>
+            </div>
+            <script>
+                const add = document.querySelector(".add"),
+                        moins = document.querySelector(".moins"),
+                        num = document.querySelector(".num");
+
+                        let b = 1;
+
+                        add.addEventListener("click", ()=>{
+                        b++;
+                        b = (b < 10) ? "0" + b : b;
+                        num.innerText = b;
+                        console.log(b);
+                        });
+
+                        moins.addEventListener("click", ()=>{
+                        if(b > 1){
+                         b--;
+                         b = (b < 10) ? "0" + b : b;
+                         num.innerText = b;  
+                        }
+                        });
+            </script>
+            <br>
+            <div>
+            <button type="reset" class="delete">Supprimer</button>
+            </div>
+            <br>
+            <div>
+                <h6 class="sarr">Total : <input type="text" class="total" value="0">M£</h6>
+            </div>
+        </div>
+    </div>
+    <div class="part">
+        <div class="most">
+            <img class="image" src="FB_IMG_15601880357109536.jpg">
+            <p class="dady">Golden Ball</p>
+            <h2 class="prix">700M£</h2>
+            <button onclick="coeur3()" id="btnS" class="btnh3"><i class="fa-solid fa-heart"></i></button>
+            <div class="btn1">
+                <span class="aug">+</span>
+                <span class="nbre">01</span>
+                <span class="dim">-</span>
+            </div>
+            <script>
+                const aug = document.querySelector(".aug"),
+                        dim = document.querySelector(".dim"),
+                        nbre = document.querySelector(".nbre");
+
+                        let c = 1;
+
+                        aug.addEventListener("click", ()=>{
+                        c++;
+                        c = (c < 10) ? "0" + c : c;
+                        nbre.innerText = c;
+                        console.log(b);
+                        });
+
+                        dim.addEventListener("click", ()=>{
+                        if(c > 1){
+                         c--;
+                         c = (c < 10) ? "0" + c : c;
+                         nbre.innerText = c;  
+                        }
+                        });
+            </script>
+            <br>
+            <div>
+            <button type="reset" class="delete">Supprimer</button>
+            </div>
+            <br>
+            <div>
+                <h6 class="sarr">Total : <input type="text" class="total" value="0">M£</h6>
+            </div>
+        </div>
+    </div>
+</section> 
+<script>
+    //  first Like Button
+     var btnh1var = document.getElementById('btnh');
+
+     function coeur1(){
+        if (btnh1var.style.color =="red") { 
+               btnh1var.style.color = "grey"
+            }
+            else{
+                 btnh1var.style.color = "red"
+            }
+     }
+
+     //  Second Like Button
+     var btnh2var = document.getElementById('btnT');
+
+     function coeur2(){
+        if (btnh2var.style.color =="red") { 
+               btnh2var.style.color = "grey"
+            }
+            else{
+                 btnh2var.style.color = "red"
+            }
+     }
+
+     //  Third Like Button
+     var btnh3var = document.getElementById('btnS');
+
+     function coeur3(){
+        if (btnh3var.style.color =="red") { 
+               btnh3var.style.color = "grey"
+            }
+            else{
+                 btnh3var.style.color = "red"
+            }
+     }
+</script>   
+</body>
+</html>

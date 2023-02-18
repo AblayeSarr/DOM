@@ -1,0 +1,136 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.leuz{
+    text-align: center;
+    margin-top: 2cm;
+}
+.logo{
+    font-weight: bolder;
+    font-size: 2em;
+    text-decoration: none;
+    color: blue;
+}
+.img{
+    width: 160px;
+    height: 200px;
+    margin-top: 4cm;
+    border-radius: 4px;
+}
+.block{
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    width: 160px;
+    height: 200px;
+    margin-top: 4cm;
+    border-radius: 4px;
+}
+.btn1{
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-left: 50px;
+}
+.btn1 span{
+font-size: 20px;
+border-left: 2px;
+text-align: center;
+font-weight: 100;
+width: 40%;
+cursor: pointer;
+}
+.btn1 span.value{
+    font-size: 20px;
+    border-left: 2px solid rgba(0,0,0,0.2);
+    border-right: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.btn1 span.num{
+    font-size: 20px;
+    border-left: 2px solid rgba(0,0,0,0.2);
+    border-right: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.btn1 span.nbre{
+    font-size: 20px;
+    border-left: 2px solid rgba(0,0,0,0.2);
+    border-right: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.sarr{
+    font-size: x-large;
+}
+.total{
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    border: none;   
+}
+.delete{
+    margin-left: 60px;
+}
+h2{
+    margin-left: 50px;
+}
+.dady{
+    margin-left: 45px;
+}
+.btnh1{
+    position: absolute;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+    outline: none;
+    color: grey;
+}
+.btnh1 i:hover{
+    cursor: pointer;
+}
+.btnh2{
+    position: absolute;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+    outline: none;
+}
+.btnh2 i:hover{
+    cursor: pointer;
+}
+.btnh3 i:hover{
+        cursor: pointer;
+}
+.btnh2{
+    position: absolute;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+    outline: none;
+    color: grey;
+}
+.btnh3{
+    position: absolute;
+    border: none;
+    font-size: larger;
+    background-color: transparent;
+    color: grey;
+    outline: none;
+}
+.delete{
+    background-color: red;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
